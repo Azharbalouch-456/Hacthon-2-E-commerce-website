@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+B{
+background-color: blue;
+justify-content: center;
+align-items: center;
+}
+
+.part{
+    background-color: #F9F1E7;
+  
+}
+
+
+.Two{
+    background-color: #F9F1E7;
+}
+
+
+.Three{
+    background-color: #F9F1E7;
+}
+
+
+.Next{
+    background-color: #F9F1E7;
+    opacity: 100%;
+}
+
+.Footer{
+    background-color: #FAF3EA;
+    opacity: 100%;
+}
+
+
+
+
+
+.footer2 {
+    background-color: #ffffff;
+    padding: 2rem 0;
+    font-family: Arial, sans-serif;
+    color: #6b7280;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+    margin: 0 1rem;
+  }
+  
+  .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .footer-section h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #6b7280;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #000;
+  }
+  
+  .footer-section form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-section form input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+  }
+  
+  .footer-section form button {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .footer-section form button:hover {
+    background-color: #333;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+    border-top: 1px solid #d1d5db;
+    padding-top: 1rem;
+  }
+  
+  .L{
+    line-height: 150%;
+    opacity: 100%;
+  }
+
+  .M{
+    line-height: 150%;
+    opacity: 100%;
+  }
+
+
+  .custom-image {
+    width: 100%; /* Adjust width dynamically */
+    height: 190px; /* Set desired height */
+    object-fit: cover; /* Adjust how the image fits within its container */
+  }
+
+
+  .Send {
+    background-color: #a67c00; /* Golden color */
+    color: #ffffff; /* White text */
+    padding: 10px 20px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.Send:hover {
+    background-color: #8c6a00; /* Slightly darker golden on hover */
+}
+
+.H{
+ text-align: right;
+opacity: 100%;
+text-align: center; justify-content: center;
+
+
+}
