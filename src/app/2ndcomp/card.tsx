@@ -1,10 +1,7 @@
-
-
-
-
 "use client";
 
 import { useState } from "react";
+import Image from 'next/image';
 
 export default function RoomInspiration() {
   const images = [
@@ -46,11 +43,13 @@ export default function RoomInspiration() {
 
         {/* Image Section */}
         <div className="relative flex-1 max-w-md lg:max-w-none">
-          <img
+          <Image
             src={currentImage.src}
-            alt=""
-            className="rounded-lg shadow-md transition-all duration-500 ease-in-out"
-          /> 
+            alt={currentImage.title}
+            width={285}
+            height={446}
+            className="w-full h-auto rounded-lg shadow-md transition-all duration-500 ease-in-out"
+          />
           {/* <div className="absolute bottom-4 left-4 bg-white bg-opacity-80 p-4 rounded-lg shadow-lg">
             <p className="text-sm text-gray-500">{currentImage.subtitle}</p>
             <h2 className="text-lg font-semibold text-gray-800">

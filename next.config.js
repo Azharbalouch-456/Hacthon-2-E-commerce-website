@@ -1,3 +1,5 @@
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -20,6 +22,22 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
     scrollRestoration: true,
+  },
+  webpack: (config, { dev, isServer }) => {
+    if (!dev && !isServer) {
+      config.optimization.minimize = true;
+      config.optimization.minimizer.push(
+        new CssMinimizerPlugin({
+          minimizerOptions: {
+            preset: ['default', {
+              discardComments: { removeAll: true },
+              normalizeWhitespace: false
+            }]
+          }
+        })
+      );
+    }
+    return config;
   }
 }
 

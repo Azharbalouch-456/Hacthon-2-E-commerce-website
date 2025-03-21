@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-
+import Image from 'next/image';
 
 interface Product {
     
@@ -29,9 +22,11 @@ interface Product {
           
       <div className=" relative group overflow-hidden shadow-md ">
         {/* Product Image */}
-        <img
+        <Image
           src={product.image}
           alt={product.name}
+          width={285}
+          height={446}
           className="w-[285] h-[446]"
         />
   

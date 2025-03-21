@@ -1,6 +1,4 @@
-
-
-
+import Image from 'next/image';
 
 interface Product {
     id: number;
@@ -20,10 +18,12 @@ interface Product {
     return (
       <div className=" relative group overflow-hidden shadow-md ">
         {/* Product Image */}
-        <img
+        <Image
           src={product.image}
           alt={product.name}
-          className="w-[285] h-[446]"
+          width={285}
+          height={446}
+          className="w-full h-auto"
         />
   
   {/* Discount Badge */}

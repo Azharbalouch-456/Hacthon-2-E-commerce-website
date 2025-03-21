@@ -1,16 +1,16 @@
-
-
-
+import Image from 'next/image';
 
 export default function HeroSection() {
   return (
     <div className="relative h-screen ">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img
-          src="/Ai.jfif" // Update this with your image path
-          alt="Hero Background"
-          className="w-full h-full object-cover"
+        <Image
+          src="/hero-image.jpg"
+          alt="Hero Section"
+          width={1920}
+          height={1080}
+          className="w-full h-auto"
         />
       </div>
 
